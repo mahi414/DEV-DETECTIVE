@@ -172,7 +172,7 @@
 .finder input{
     flex:1;
     border:none;
-    font-size:1rem;
+    font-size:1.25rem;
     color:var(--text-color);
     background:transparent;
     outline:none;

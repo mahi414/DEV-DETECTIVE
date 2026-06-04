@@ -102,11 +102,13 @@ async function getProfile(username){
         const response = await fetch(
             `https://api.github.com/users/${username}`
         );
-        if(!response.ok){
+
+        const data = await response.json();
+        if(!response.ok || data.message){
             invalid.classList.add("active");
             return;
         }
-        const data = await response.json();
+        
         invalid.classList.remove("active"); 
         renderDetails(data);
     }
