@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Detective </title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet"
+    />
+</head>
+<body class="parent">
+    <div class="wrapper">
+        <!--logo+ change mode-->
+        <div class="changeMode">
+            <p class="devDetective font-[#4b6a9b]">DevDetective</p>
+            <button class="light">
+                <p>LIGHT</p>
+                <img src="./assets/sun-icon.svg">
+            </button>
+            <button class="dark active">
+                <p>DARK</p>
+                <img src="./assets/moon-icon.svg">
+            </button>
+        </div>
+
+        <!--finder-->
+        <div class="finder">
+            <form class="searchForm">
+                <img src="./assets/search-icon.svg">
+                <input placeholder="Enter a Github  username..." data-profileTofind required>
+                <div class="notFound">
+                    <p>Invalid username</p>
+                </div>
+                 <button class="btn">Search</button>
+            </form>
+            
+           
+        </div>
+        <!--profile-->
+        <div class="profile">
+            <div class="profilePic">
+                <img data-profileImg src="" alt="" loading="lazy">
+            </div>
+            <div class="profileData">
+                <!--name+ joining date-->
+                <div class="nameDate">
+                     <p class="name" data-Name></p>
+                    <p class="joinDate" data-joiningDate></p>
+                </div>
+
+                <div class="linkdiv">
+                    <a href="" class="link" target="_blank" data-accName>
+                    </a>
+                </div>
+
+                <div class="position">
+                    <p class="currentData"  data-details></p>
+                </div>
+                
+                <div  class="stats">
+                    <div class="repos">
+                        <p class="p1">Repos</p>
+                        <p class="p2" data-repos></p>
+                    </div>
+                    <div class="followers">
+                        <p  class="p1">Followers</p>
+                        <p class="p2" data-followers></p>
+                    </div>
+                    <div class="following">
+                        <p class="p1">Following</p>
+                        <p class="p2" data-following></p>
+                        </div>
+                </div>
+
+                <div class="gridContainer">
+                    <div class="location">
+                        <img src="./assets/location-icon.svg">
+                        <p data-location></p>
+                    </div>
+                    <div class="twitter">
+                        <img src="./assets/twiiter-icon.svg">
+                        <a href="" target="_blank" data-twitter></a>
+                    </div>
+                    <div class="website">
+                        <img src="./assets/website-icon.svg">
+                        <a href=""target="_blank" data-website></a>
+                    </div>
+
+                    <div class="company">
+                        <img src="./assets/company-icon.svg">
+                        <p data-company></p>
+                    </div>
+                </div>
+            </div>
+
+          
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+    
+</body>
+</html>
