@@ -32,8 +32,7 @@ Dev Detective is a simple and responsive web application that allows users to se
 
 ## 📸 Demo
 
-🔗 Live Demo: https://your-live-link.com  
-(Replace with your Vercel/Netlify link)
+🔗 Live Demo:
 
 ---
 
@@ -73,26 +72,3 @@ git clone https://github.com/your-username/dev-detective.git
 # Open folder
 cd dev-detective
 
-# Open index.html in browser
-
----
-
-## ✨ Future Improvements
-
-- Add search history
-- Show repositories list
-- Add loading skeleton UI
-- Improve error handling
-- Add animations for smoother UX
-
----
-
-## 👨‍💻 Author
-
-Made with ❤️ by Your Name
-
----
-
-## 📄 License
-
-This project is open-source and available under the MIT License.
